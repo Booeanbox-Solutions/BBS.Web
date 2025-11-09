@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Services from './pages/Services';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
-import ContactUs from './pages/ContactUs';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import AboutUs from './pages/AboutUs.tsx';
+import Services from './pages/Services.tsx';
+import Blog from './pages/Blog.tsx';
+import BlogPost from './pages/BlogPost.tsx';
+import ContactUs from './pages/ContactUs.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import './App.css';
 
 function App() {

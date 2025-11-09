@@ -4,8 +4,23 @@ import { Helmet } from 'react-helmet-async';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import './ContactUs.css';
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  message: string;
+}
+
+interface ContactInfo {
+  icon: React.ReactNode;
+  title: string;
+  value: string;
+  link: string | null;
+}
+
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
@@ -13,16 +28,16 @@ const ContactUs = () => {
     message: ''
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // In a real application, you would send this data to your backend
     console.log('Form submitted:', formData);
@@ -33,7 +48,7 @@ const ContactUs = () => {
     }, 3000);
   };
 
-  const contactInfo = [
+  const contactInfo: ContactInfo[] = [
     {
       icon: <FaEnvelope />,
       title: 'Email',
@@ -168,7 +183,7 @@ const ContactUs = () => {
                     <textarea
                       name="message"
                       placeholder="Your Message *"
-                      rows="5"
+                      rows={5}
                       value={formData.message}
                       onChange={handleChange}
                       required

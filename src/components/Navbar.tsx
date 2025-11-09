@@ -4,9 +4,14 @@ import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
+interface NavItem {
+  path: string;
+  label: string;
+}
+
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -22,7 +27,7 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   }, [location]);
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Services' },

@@ -4,8 +4,19 @@ import { Helmet } from 'react-helmet-async';
 import { FaCalendar, FaUser, FaClock } from 'react-icons/fa';
 import './Blog.css';
 
+interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+}
+
 const Blog = () => {
-  const blogPosts = [
+  const blogPosts: BlogPost[] = [
     {
       id: 1,
       title: 'The Future of AI in Enterprise Solutions',

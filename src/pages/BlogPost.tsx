@@ -3,11 +3,21 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaCalendar, FaUser, FaClock, FaArrowLeft } from 'react-icons/fa';
 
+interface BlogPostData {
+  id: string | undefined;
+  title: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+  content: string;
+}
+
 const BlogPost = () => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
 
   // Sample blog post data (in a real app, this would come from an API or database)
-  const blogPost = {
+  const blogPost: BlogPostData = {
     id: id,
     title: 'The Future of AI in Enterprise Solutions',
     author: 'BBS Team',
