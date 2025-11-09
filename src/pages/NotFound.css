@@ -1,0 +1,474 @@
+.not-found {
+    min-height: calc(100vh - 192px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 192px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%);
+}
+
+.not-found-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 1;
+}
+
+/* Animated particles */
+.particles-404 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.particle-404 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-color);
+    opacity: 0.6;
+}
+
+/* Main content */
+.not-found-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Glitch effect 404 */
+.error-code {
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.glitch {
+    position: relative;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glitch-skew 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--primary-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--accent-color);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(10px, 9999px, 31px, 0);
+        transform: skew(0.5deg);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 71px, 0);
+        transform: skew(0.8deg);
+    }
+
+    10% {
+        clip: rect(60px, 9999px, 100px, 0);
+        transform: skew(0.3deg);
+    }
+
+    15% {
+        clip: rect(10px, 9999px, 105px, 0);
+        transform: skew(0.9deg);
+    }
+
+    20% {
+        clip: rect(40px, 9999px, 20px, 0);
+        transform: skew(0.4deg);
+    }
+
+    25% {
+        clip: rect(80px, 9999px, 15px, 0);
+        transform: skew(0.6deg);
+    }
+
+    30% {
+        clip: rect(20px, 9999px, 94px, 0);
+        transform: skew(0.7deg);
+    }
+
+    35% {
+        clip: rect(90px, 9999px, 30px, 0);
+        transform: skew(0.2deg);
+    }
+
+    40% {
+        clip: rect(50px, 9999px, 80px, 0);
+        transform: skew(0.5deg);
+    }
+
+    100% {
+        clip: rect(70px, 9999px, 80px, 0);
+        transform: skew(0.1deg);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 119px, 0);
+        transform: skew(0.4deg);
+    }
+
+    5% {
+        clip: rect(52px, 9999px, 36px, 0);
+        transform: skew(0.7deg);
+    }
+
+    10% {
+        clip: rect(79px, 9999px, 50px, 0);
+        transform: skew(0.2deg);
+    }
+
+    15% {
+        clip: rect(95px, 9999px, 6px, 0);
+        transform: skew(0.6deg);
+    }
+
+    20% {
+        clip: rect(31px, 9999px, 100px, 0);
+        transform: skew(0.3deg);
+    }
+
+    100% {
+        clip: rect(55px, 9999px, 95px, 0);
+        transform: skew(0.5deg);
+    }
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(0deg);
+    }
+
+    10% {
+        transform: skew(-1deg);
+    }
+
+    20% {
+        transform: skew(1deg);
+    }
+
+    30% {
+        transform: skew(-1deg);
+    }
+
+    40% {
+        transform: skew(1deg);
+    }
+
+    50% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+/* Error icon */
+.error-icon {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+/* Error title */
+.error-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+/* Error description */
+.error-description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+/* Action buttons */
+.error-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.btn-404 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary-404 {
+    background: var(--gradient-cyber);
+    color: white;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+}
+
+.btn-primary-404:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 242, 255, 0.5);
+}
+
+.btn-primary-404::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary-404:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-outline-404 {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline-404:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+}
+
+/* Suggested links */
+.suggested-links {
+    margin-top: 3rem;
+}
+
+.suggested-links>p {
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.links-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links-grid a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.links-grid a:hover {
+    background: rgba(0, 242, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
+}
+
+/* Orbit rings */
+.orbit-rings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orbit-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    border-radius: 50%;
+    animation: orbit-pulse 3s infinite;
+}
+
+.ring-1 {
+    width: 300px;
+    height: 300px;
+    border-color: rgba(0, 242, 255, 0.3);
+}
+
+.ring-2 {
+    width: 450px;
+    height: 450px;
+    border-color: rgba(123, 44, 191, 0.3);
+    animation-delay: 1s;
+}
+
+.ring-3 {
+    width: 600px;
+    height: 600px;
+    border-color: rgba(255, 0, 110, 0.3);
+    animation-delay: 2s;
+}
+
+@keyframes orbit-pulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 8rem;
+    }
+
+    .error-title {
+        font-size: 2rem;
+    }
+
+    .error-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .error-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-404 {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .orbit-rings {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ring-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ring-2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .ring-3 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .links-grid {
+        gap: 1rem;
+    }
+
+    .links-grid a {
+        font-size: 0.9rem;
+        padding: 0.4rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 6rem;
+    }
+
+    .error-icon {
+        font-size: 3rem;
+    }
+
+    .error-title {
+        font-size: 1.5rem;
+    }
+}

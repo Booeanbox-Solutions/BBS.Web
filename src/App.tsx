@@ -9,6 +9,7 @@ import Blog from './pages/Blog.tsx';
 import BlogPost from './pages/BlogPost.tsx';
 import ContactUs from './pages/ContactUs.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
+import NotFound from './pages/NotFound.tsx';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
