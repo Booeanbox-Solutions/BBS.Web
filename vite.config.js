@@ -4,4 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/', // Use '/' for custom domain, use '/BBS.Web/' if using GitHub Pages subdomain
 })
