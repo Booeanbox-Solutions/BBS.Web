@@ -1,0 +1,141 @@
+.services-hero {
+  padding-top: 180px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: rgba(5, 5, 15, 0.5);
+}
+
+.services-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-main {
+  padding: 100px 0;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.service-detail {
+  padding: 3rem;
+}
+
+.service-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.service-icon-large {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.service-title-section {
+  flex: 1;
+}
+
+.service-title-section h2 {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.service-features h3 {
+  font-size: 1.3rem;
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+}
+
+.service-features ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-color);
+  font-size: 1.05rem;
+}
+
+.check-icon {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.tech-stack-section {
+  background: rgba(5, 5, 15, 0.5);
+  padding: 100px 0;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  cursor: pointer;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.tech-item p {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .service-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-icon-large {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .service-features ul {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
