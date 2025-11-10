@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-import logo from '../assets/logo_full_white.png';
+import logo from '../assets/logo_full_white _320.png';
 
 interface NavItem {
   path: string;
