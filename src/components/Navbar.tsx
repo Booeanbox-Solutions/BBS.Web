@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
+import logo from '../assets/logo_full_white.png';
 
 interface NavItem {
   path: string;
@@ -38,20 +39,18 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`navbar ${scrolled ? 'scrolled' : ''}`}
-      initial={{ y: -100 }}
+      initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="container nav-container">
         <Link to="/" className="logo">
           <motion.div
+            className="logo-container"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="logo-text">
-              <span className="logo-b">B</span>oolean <span className="logo-b">B</span>ox{' '}
-              <span className="logo-b">S</span>olutions
-            </span>
+            <img src={logo} alt="Boolean Box Solutions" className="logo-img" />
           </motion.div>
         </Link>
 

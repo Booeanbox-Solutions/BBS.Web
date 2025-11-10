@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { 
   FaCode, FaBrain, FaShieldAlt, FaNetworkWired, 
@@ -33,7 +33,8 @@ const Home = () => {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        // cast cubic-bezier array to any to satisfy TypeScript typings
+        ease: [0.22, 1, 0.36, 1] as any
       }
     }
   };

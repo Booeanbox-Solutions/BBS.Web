@@ -272,12 +272,12 @@
     background: var(--gradient-cyber);
     color: white;
     border: none;
-    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 255, 127, 0.3);
 }
 
 .btn-primary-404:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 242, 255, 0.5);
+    box-shadow: 0 15px 40px rgba(0, 255, 127, 0.5);
 }
 
 .btn-primary-404::before {
@@ -308,7 +308,7 @@
     background: var(--primary-color);
     color: var(--dark-bg);
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 255, 127, 0.3);
 }
 
 /* Suggested links */
@@ -334,17 +334,17 @@
     color: var(--primary-color);
     text-decoration: none;
     padding: 0.5rem 1.5rem;
-    border: 1px solid rgba(0, 242, 255, 0.3);
+    border: 1px solid rgba(0, 255, 127, 0.3);
     border-radius: 25px;
     transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .links-grid a:hover {
-    background: rgba(0, 242, 255, 0.1);
+    background: rgba(0, 255, 127, 0.1);
     border-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 255, 127, 0.2);
 }
 
 /* Orbit rings */
@@ -364,7 +364,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(0, 242, 255, 0.2);
+    border: 1px solid rgba(0, 255, 127, 0.2);
     border-radius: 50%;
     animation: orbit-pulse 3s infinite;
 }
@@ -372,20 +372,20 @@
 .ring-1 {
     width: 300px;
     height: 300px;
-    border-color: rgba(0, 242, 255, 0.3);
+    border-color: rgba(0, 255, 127, 0.3);
 }
 
 .ring-2 {
     width: 450px;
     height: 450px;
-    border-color: rgba(123, 44, 191, 0.3);
+    border-color: rgba(0, 212, 170, 0.3);
     animation-delay: 1s;
 }
 
 .ring-3 {
     width: 600px;
     height: 600px;
-    border-color: rgba(255, 0, 110, 0.3);
+    border-color: rgba(57, 255, 20, 0.3);
     animation-delay: 2s;
 }
 

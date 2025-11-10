@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import './Footer.css';
+import logo from '../assets/logo_gr.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +11,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-logo">
-              <span className="logo-b">B</span>oolean <span className="logo-b">B</span>ox{' '}
-              <span className="logo-b">S</span>olutions
-            </h3>
+            <div className="footer-logo">
+              <img src={logo} alt="Boolean Box Solutions" className="footer-logo-img" />
+            </div>
             <p className="footer-tagline">
               Transforming businesses with cutting-edge IT solutions, AI innovation, and cybersecurity excellence.
             </p>

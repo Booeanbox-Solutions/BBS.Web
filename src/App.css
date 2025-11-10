@@ -1,102 +1,151 @@
-:root {#root {
+:root {
+  #root {
 
-  --primary-color: #00f2ff;  max-width: 1280px;
+    --primary-color: #00f2ff;
+    max-width: 1280px;
 
-  --secondary-color: #7b2cbf;  margin: 0 auto;
+    --secondary-color: #7b2cbf;
+    margin: 0 auto;
 
-  --accent-color: #ff006e;  padding: 2rem;
+    --accent-color: #ff006e;
+    padding: 2rem;
 
-  --dark-bg: #0a0a0a;  text-align: center;
+    --dark-bg: #0a0a0a;
+    text-align: center;
 
-  --card-bg: rgba(20, 20, 40, 0.7);}
+    --card-bg: rgba(20, 20, 40, 0.7);
+  }
 
   --text-color: #e0e0e0;
 
-  --heading-color: #ffffff;.logo {
+  --heading-color: #ffffff;
 
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  height: 6em;
+  .logo {
 
-  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);  padding: 1.5em;
+    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 6em;
 
-  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);  will-change: filter;
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    will-change: filter;
 
-  --gradient-cyber: linear-gradient(135deg, #00f2ff 0%, #7b2cbf 50%, #ff006e 100%);  transition: filter 300ms;
+    --gradient-cyber: linear-gradient(135deg, #00f2ff 0%, #7b2cbf 50%, #ff006e 100%);
+    transition: filter 300ms;
 
-}}
+  }
+}
 
 .logo:hover {
 
-* {  filter: drop-shadow(0 0 2em #646cffaa);
+  * {
+    filter: drop-shadow(0 0 2em #646cffaa);
 
-  margin: 0;}
+    margin: 0;
+  }
 
-  padding: 0;.logo.react:hover {
+  padding: 0;
 
-  box-sizing: border-box;  filter: drop-shadow(0 0 2em #61dafbaa);
+  .logo.react:hover {
 
-}}
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 2em #61dafbaa);
+
+  }
+}
 
 
 
-body {@keyframes logo-spin {
+body {
+  @keyframes logo-spin {
 
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',  from {
+    font-family: 'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    from {
 
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;    transform: rotate(0deg);
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+      transform: rotate(0deg);
 
-  -webkit-font-smoothing: antialiased;  }
+      -webkit-font-smoothing: antialiased;
+    }
 
-  -moz-osx-font-smoothing: grayscale;  to {
+    -moz-osx-font-smoothing: grayscale;
 
-  background: var(--dark-bg);    transform: rotate(360deg);
+    to {
 
-  color: var(--text-color);  }
+      background: var(--dark-bg);
+      transform: rotate(360deg);
 
-  overflow-x: hidden;}
+      color: var(--text-color);
+    }
+
+    overflow-x: hidden;
+  }
 
 }
 
 @media (prefers-reduced-motion: no-preference) {
 
-.App {  a:nth-of-type(2) .logo {
+  .App {
+    a:nth-of-type(2) .logo {
 
-  min-height: 100vh;    animation: logo-spin infinite 20s linear;
+      min-height: 100vh;
+      animation: logo-spin infinite 20s linear;
 
-  position: relative;  }
+      position: relative;
+    }
 
-}}
+  }
+}
 
 
 
-/* Animated Background */.card {
+/* Animated Background */
+.card {
 
-.App::before {  padding: 2em;
+  .App::before {
+    padding: 2em;
 
-  content: '';}
+    content: '';
+  }
 
   position: fixed;
 
-  top: 0;.read-the-docs {
+  top: 0;
 
-  left: 0;  color: #888;
+  .read-the-docs {
 
-  width: 100%;}
+    left: 0;
+    color: #888;
+
+    width: 100%;
+  }
 
   height: 100%;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(123, 44, 191, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 242, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(255, 0, 110, 0.15) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 50%, rgba(0, 212, 170, 0.15) 0%, transparent 50%),
+  radial-gradient(circle at 80% 80%, rgba(0, 255, 127, 0.15) 0%, transparent 50%),
+  radial-gradient(circle at 40% 20%, rgba(57, 255, 20, 0.15) 0%, transparent 50%);
   animation: backgroundPulse 20s ease-in-out infinite;
   z-index: -1;
 }
 
 @keyframes backgroundPulse {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
+
+  0%,
+  100% {
     opacity: 0.8;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
 
@@ -146,12 +195,12 @@ body {@keyframes logo-spin {
 .btn-primary {
   background: var(--gradient-cyber);
   color: white;
-  box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 255, 127, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(0, 242, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 255, 127, 0.5);
 }
 
 .btn-outline {
@@ -164,13 +213,13 @@ body {@keyframes logo-spin {
   background: var(--primary-color);
   color: var(--dark-bg);
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 255, 127, 0.3);
 }
 
 .card {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(0, 255, 127, 0.1);
   border-radius: 20px;
   padding: 2.5rem;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -188,13 +237,19 @@ body {@keyframes logo-spin {
   background: var(--gradient-cyber);
   opacity: 0;
   transition: opacity 0.4s ease;
-  z-index: -1;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.card>* {
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
-  box-shadow: 0 20px 60px rgba(0, 242, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 255, 127, 0.2);
 }
 
 .card:hover::before {
@@ -202,9 +257,9 @@ body {@keyframes logo-spin {
 }
 
 .glow-text {
-  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5),
-               0 0 20px rgba(0, 242, 255, 0.3),
-               0 0 30px rgba(0, 242, 255, 0.2);
+  text-shadow: 0 0 10px rgba(0, 255, 127, 0.5),
+    0 0 20px rgba(0, 255, 127, 0.3),
+    0 0 30px rgba(0, 255, 127, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -229,6 +284,7 @@ body {@keyframes logo-spin {
   0% {
     background-position: -1000px 0;
   }
+
   100% {
     background-position: 1000px 0;
   }

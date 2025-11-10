@@ -10,14 +10,14 @@
 }
 
 :root {
-  --primary-color: #00f2ff;
-  --secondary-color: #7b2cbf;
-  --accent-color: #ff006e;
+  --primary-color: #00ff7f;
+  --secondary-color: #00d4aa;
+  --accent-color: #39ff14;
   --dark-bg: #0a0a0a;
-  --card-bg: rgba(20, 20, 40, 0.7);
+  --card-bg: rgba(15, 30, 25, 0.7);
   --text-color: #e0e0e0;
   --heading-color: #ffffff;
-  --gradient-cyber: linear-gradient(135deg, #00f2ff 0%, #7b2cbf 50%, #ff006e 100%);
+  --gradient-cyber: linear-gradient(135deg, #00ff7f 0%, #00d4aa 50%, #39ff14 100%);
 }
 
 html {
@@ -74,7 +74,6 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
 
