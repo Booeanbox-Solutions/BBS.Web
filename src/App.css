@@ -278,6 +278,15 @@ body {
   .container {
     padding: 0 1rem;
   }
+
+  .logo:hover {
+    padding: 1em;
+  }
+
+    .logo{
+    height: auto !important;
+    padding: 1em;
+  }
 }
 
 @keyframes shimmer {

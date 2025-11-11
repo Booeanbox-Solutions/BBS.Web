@@ -34,15 +34,16 @@
 }
 
 .logo-img {
-  height: 80px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(0, 255, 127, 0.3));
   transition: filter 0.3s ease;
+  transition: height 0.3s ease;
 }
 
 .navbar.scrolled .logo-img {
-  height: 80px;
+  height: 60px;
 }
 
 .logo-img:hover {
@@ -123,6 +124,19 @@
   .nav-link {
     font-size: 1.2rem;
   }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar.scrolled .logo-img {
+    height: 50px;
+  }
+
 
   .logo-text {
     font-size: 1rem;
