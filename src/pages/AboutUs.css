@@ -54,7 +54,7 @@
   width: 100%;
   height: 100%;
   background: var(--card-bg);
-  border: 2px solid rgba(0, 255, 127, 0.2);
+  border: 2px solid rgba(0, 210, 255, 0.35);
   border-radius: 20px;
   display: flex;
   align-items: center;

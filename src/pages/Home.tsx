@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
@@ -6,15 +6,30 @@ import {
   FaCode, FaBrain, FaShieldAlt, FaNetworkWired, 
   FaRocket, FaChartLine, FaUsers, FaAward 
 } from 'react-icons/fa';
+import heroVideoSrc from '../assets/ai_web.mp4';
 import './Home.css';
 
 const Home = () => {
   const heroRef = useRef(null);
   const featuresRef = useRef(null);
   const statsRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoReady, setVideoReady] = useState(false);
   
   const featuresInView = useInView(featuresRef, { once: true, margin: "-100px" });
   const statsInView = useInView(statsRef, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    if (videoReady && videoRef.current) {
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay might be blocked; keep fallback visible in that scenario
+          setVideoReady(false);
+        });
+      }
+    }
+  }, [videoReady]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -156,8 +171,8 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
-                Transform Your Business with
-                <span className="gradient-text glow-text"> Next-Gen Technology</span>
+                Your Gateway to
+                <span className="gradient-text glow-text"> Smarter Digital Solutions</span>
               </motion.h1>
               
               <motion.p
@@ -191,10 +206,25 @@ const Home = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
             >
-              <div className="floating-element">
-                <div className="tech-circle circle-1"></div>
-                <div className="tech-circle circle-2"></div>
-                <div className="tech-circle circle-3"></div>
+              <div className="hero-visual">
+                <video
+                  ref={videoRef}
+                  className={`hero-video ${videoReady ? 'visible' : ''}`}
+                  src={heroVideoSrc}
+                  preload="auto"
+                  muted
+                  loop
+                  playsInline
+                  onCanPlayThrough={() => setVideoReady(true)}
+                />
+
+                <div className={`hero-fallback ${videoReady ? 'hidden' : ''}`}>
+                  <div className="floating-element">
+                    <div className="tech-circle circle-1"></div>
+                    <div className="tech-circle circle-2"></div>
+                    <div className="tech-circle circle-3"></div>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>

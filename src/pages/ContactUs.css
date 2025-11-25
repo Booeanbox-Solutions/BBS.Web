@@ -48,8 +48,8 @@
   width: 50px;
   height: 50px;
   flex-shrink: 0;
-  background: rgba(0, 255, 127, 0.1);
-  border: 1px solid rgba(0, 255, 127, 0.3);
+  background: rgba(0, 210, 255, 0.12);
+  border: 1px solid rgba(0, 210, 255, 0.35);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@
   width: 100%;
   padding: 1rem 1.5rem;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 127, 0.2);
+  border: 1px solid rgba(0, 210, 255, 0.25);
   border-radius: 10px;
   color: var(--text-color);
   font-size: 1rem;
@@ -110,7 +110,7 @@
   outline: none;
   border-color: var(--primary-color);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(0, 255, 127, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.2);
 }
 
 .form-group input::placeholder,
@@ -133,7 +133,7 @@
 
 .success-message {
   padding: 1rem;
-  background: rgba(0, 255, 127, 0.1);
+  background: rgba(0, 210, 255, 0.12);
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   color: var(--primary-color);

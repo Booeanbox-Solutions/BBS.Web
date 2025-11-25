@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -68,14 +68,67 @@
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3rem;
 }
 
 .hero-image {
   position: relative;
-  height: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+
+.hero-visual {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  isolation: isolate;
+  --hero-edge-fade: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 10%, rgb(255 255 255 / 76%) 10%, rgb(252 255 255 / 0%) 70%);
+  mix-blend-mode: lighten;
+}
+
+.hero-video {
+  transform: scale(1.2);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  background-color: rgba(3, 5, 15, 0.95);
+  z-index: 1;
+  mask-image: var(--hero-edge-fade);
+  -webkit-mask-image: var(--hero-edge-fade);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  filter: saturate(1.05) contrast(1.05) brightness(0.8);
+}
+
+.hero-video.visible {
+  opacity: 1;
+}
+
+.hero-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease;
+  background: radial-gradient(circle at 75% 25%, rgba(0, 242, 255, 0.05), transparent 60%);
+  z-index: 3;
+  mask-image: var(--hero-edge-fade);
+  -webkit-mask-image: var(--hero-edge-fade);
+}
+
+.hero-fallback.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .floating-element {
@@ -93,7 +146,7 @@
 .circle-1 {
   width: 100%;
   height: 100%;
-  border-color: rgba(0, 255, 127, 0.3);
+  border-color: rgba(0, 210, 255, 0.35);
   animation: rotate 20s linear infinite;
 }
 
@@ -102,7 +155,7 @@
   height: 70%;
   top: 15%;
   left: 15%;
-  border-color: rgba(0, 212, 170, 0.3);
+  border-color: rgba(0, 180, 255, 0.35);
   animation: rotate 15s linear infinite reverse;
 }
 
@@ -111,7 +164,7 @@
   height: 40%;
   top: 30%;
   left: 30%;
-  border-color: rgba(57, 255, 20, 0.3);
+  border-color: rgba(0, 125, 255, 0.4);
   animation: rotate 10s linear infinite;
   background: var(--gradient-cyber);
   opacity: 0.2;
@@ -122,6 +175,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -163,7 +217,7 @@
 
 .stats-section {
   padding: 80px 0;
-  background: rgba(0, 255, 127, 0.02);
+  background: rgba(0, 210, 255, 0.05);
 }
 
 .stats-grid {
@@ -233,7 +287,7 @@
   }
 
   .hero-image {
-    height: 300px;
+    height: 380px;
   }
 
   .floating-element {
