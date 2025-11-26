@@ -82,10 +82,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: <FaUsers />, value: '100+', label: 'Happy Clients' },
-    { icon: <FaRocket />, value: '200+', label: 'Projects Delivered' },
-    { icon: <FaAward />, value: '15+', label: 'Years Experience' },
-    { icon: <FaChartLine />, value: '99%', label: 'Client Satisfaction' }
+    { icon: <FaUsers />, value: '40+', label: 'Happy Clients' },
+    { icon: <FaRocket />, value: '100+', label: 'Projects Delivered' },
+    { icon: <FaAward />, value: '13+', label: 'Years Experience' },
+    { icon: <FaChartLine />, value: '100%', label: 'Client Satisfaction' }
   ];
 
   return (

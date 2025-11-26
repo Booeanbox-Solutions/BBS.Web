@@ -1,3 +1,9 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .hero {
   min-height: 95vh;
   display: flex;
@@ -183,7 +189,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -276,6 +282,18 @@
   opacity: 0.9;
 }
 
+@media (max-width: 1280px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 968px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -293,10 +311,6 @@
   .floating-element {
     width: 300px;
     height: 300px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
   }
 
   .stats-grid {

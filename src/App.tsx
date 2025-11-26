@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 import Home from './pages/Home.tsx';
 import AboutUs from './pages/AboutUs.tsx';
 import Services from './pages/Services.tsx';
@@ -16,6 +17,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <div className="App">
           <Navbar />
           <Routes>

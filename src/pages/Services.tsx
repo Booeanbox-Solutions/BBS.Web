@@ -10,6 +10,7 @@ import './Services.css';
 const Services = () => {
   const services = [
     {
+      id: 'software-development',
       icon: <FaCode />,
       title: 'Software Development',
       description: 'Custom software solutions tailored to your unique business requirements',
@@ -23,6 +24,7 @@ const Services = () => {
       gradient: 'var(--gradient-1)'
     },
     {
+      id: 'ai-solutions',
       icon: <FaBrain />,
       title: 'AI Solutions',
       description: 'Advanced artificial intelligence solutions for modern industries',
@@ -36,6 +38,7 @@ const Services = () => {
       gradient: 'var(--gradient-2)'
     },
     {
+      id: 'cybersecurity',
       icon: <FaShieldAlt />,
       title: 'Cybersecurity',
       description: 'Comprehensive security solutions to protect your digital assets',
@@ -49,6 +52,7 @@ const Services = () => {
       gradient: 'var(--gradient-3)'
     },
     {
+      id: 'iot-integration',
       icon: <FaNetworkWired />,
       title: 'IoT & Integration',
       description: 'Seamless connectivity and integration for the Internet of Things',
@@ -111,6 +115,7 @@ const Services = () => {
               {services.map((service, index) => (
                 <motion.div
                   key={index}
+                  id={service.id}
                   className="service-detail card"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}

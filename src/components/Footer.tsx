@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
-import logo from '../assets/logo_gr.png';
+import logo from '../assets/logo_icon_booleanbox_sol_white.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,10 +44,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Services</h4>
             <ul className="footer-links">
-              <li><Link to="/services">Software Solutions</Link></li>
-              <li><Link to="/services">AI Solutions</Link></li>
-              <li><Link to="/services">Cybersecurity</Link></li>
-              <li><Link to="/services">IoT Integration</Link></li>
+              <li><Link to="/services#software-development">Software Solutions</Link></li>
+              <li><Link to="/services#ai-solutions">AI Solutions</Link></li>
+              <li><Link to="/services#cybersecurity">Cybersecurity</Link></li>
+              <li><Link to="/services#iot-integration">IoT Integration</Link></li>
             </ul>
           </div>
 
@@ -56,22 +56,26 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <FaEnvelope />
-                <a href="mailto:info@booleanboxsolutions.com">info@booleanboxsolutions.com</a>
+                <a href="mailto:booleanboxsolutions@gmail.com">booleanboxsolutions@gmail.com</a>
               </li>
               <li>
                 <FaPhone />
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+919899672533">+91 9899672533</a>
+              </li>
+              <li>
+                <FaWhatsapp />
+                <a href="https://wa.me/919953052462" target="_blank" rel="noopener noreferrer">+91 99530 52462</a>
               </li>
               <li>
                 <FaMapMarkerAlt />
-                <span>Your Location, Country</span>
+                <span>Rajasthan, India</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Boolean Box Solutions. All rights reserved.</p>
+          <p>&copy; {currentYear} BooleanBox Solutions. All rights reserved.</p>
           <div className="footer-bottom-links">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <span>|</span>
