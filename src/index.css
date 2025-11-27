@@ -10,6 +10,7 @@
 }
 
 :root {
+  color-scheme: dark;
   --primary-color: #00f2ff;
   --secondary-color: #00bdf2;
   --accent-color: #0078ff;
