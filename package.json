@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Boolean Box Solutions - IT Services, AI Solutions, Cybersecurity & IoT",
+  "description": "BooleanBox Solutions - IT Services, AI Solutions, Cybersecurity & IoT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

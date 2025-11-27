@@ -1,4 +1,4 @@
-# Deployment Guide - Boolean Box Solutions Website
+# Deployment Guide - BooleanBox Solutions Website
 
 This guide provides step-by-step instructions for deploying your React application to production.
 

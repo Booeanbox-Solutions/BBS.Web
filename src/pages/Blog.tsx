@@ -82,10 +82,10 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog - Boolean Box Solutions | Tech Insights & Updates</title>
+        <title>Blog - BooleanBox Solutions | Tech Insights & Updates</title>
         <meta 
           name="description" 
-          content="Read the latest insights on AI, cybersecurity, IoT, and software development from Boolean Box Solutions experts." 
+          content="Read the latest insights on AI, cybersecurity, IoT, and software development from BooleanBox Solutions experts." 
         />
       </Helmet>
 

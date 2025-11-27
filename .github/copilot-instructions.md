@@ -1,7 +1,7 @@
-# Boolean Box Solutions Website - AI Coding Agent Instructions
+# BooleanBox Solutions Website - AI Coding Agent Instructions
 
 ## Project Overview
-This is a React 19 + Vite SPA for Boolean Box Solutions, a company providing IT services, AI solutions, cybersecurity, and IoT integration. The site features modern animations, SEO optimization, and a futuristic design aesthetic.
+This is a React 19 + Vite SPA for BooleanBox Solutions, a company providing IT services, AI solutions, cybersecurity, and IoT integration. The site features modern animations, SEO optimization, and a futuristic design aesthetic.
 
 ## Architecture & Structure
 

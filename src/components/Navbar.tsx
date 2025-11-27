@@ -32,7 +32,7 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Services' },
-    { path: '/blog', label: 'Blog' },
+    // { path: '/blog', label: 'Blog' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -50,7 +50,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img src={logo} alt="Boolean Box Solutions" className="logo-img" />
+            <img src={logo} alt="BooleanBox Solutions" className="logo-img" />
           </motion.div>
         </Link>
 

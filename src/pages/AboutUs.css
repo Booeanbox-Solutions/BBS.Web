@@ -1,8 +1,7 @@
 .about-hero {
-  padding-top: 180px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 50px;
   text-align: center;
-  background: rgba(5, 5, 15, 0.5);
 }
 
 .about-hero-content {
@@ -18,7 +17,7 @@
 }
 
 .about-content {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .about-grid {
@@ -53,8 +52,6 @@
 .image-placeholder {
   width: 100%;
   height: 100%;
-  background: var(--card-bg);
-  border: 2px solid rgba(0, 210, 255, 0.35);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -63,9 +60,23 @@
 }
 
 .placeholder-icon {
-  font-size: 8rem;
-  color: var(--primary-color);
-  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-logo-icon {
+  min-width: 300px;
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.3));
+  transition: all 0.3s ease;
+}
+
+.about-logo-icon:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 2em #646cffaa)
 }
 
 .expertise-section {
@@ -91,7 +102,7 @@
 }
 
 .values-section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .values-grid {
@@ -124,6 +135,8 @@
 
 .team-section {
   background: rgba(5, 5, 15, 0.5);
+  padding: 50px;
+  margin-bottom: 1.5rem;
 }
 
 .team-content {

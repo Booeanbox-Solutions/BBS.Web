@@ -1,8 +1,7 @@
 .services-hero {
-  padding-top: 180px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 60px;
   text-align: center;
-  background: rgba(5, 5, 15, 0.5);
 }
 
 .services-hero-content {
@@ -11,7 +10,7 @@
 }
 
 .services-main {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .services-list {

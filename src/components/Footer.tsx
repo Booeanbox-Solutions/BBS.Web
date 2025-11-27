@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img src={logo} alt="Boolean Box Solutions" className="footer-logo-img" />
+              <img src={logo} alt="BooleanBox Solutions" className="footer-logo-img" />
             </div>
             <p className="footer-tagline">
               Transforming businesses with cutting-edge IT solutions, AI innovation, and cybersecurity excellence.

@@ -25,7 +25,7 @@ const BlogPost = () => {
     readTime: '5 min read',
     category: 'AI & Machine Learning',
     content: `
-      <p>Artificial Intelligence is revolutionizing the way enterprises operate, making processes more efficient, decision-making more data-driven, and customer experiences more personalized. At Boolean Box Solutions, we're at the forefront of this transformation, developing cutting-edge AI solutions that drive real business value.</p>
+      <p>Artificial Intelligence is revolutionizing the way enterprises operate, making processes more efficient, decision-making more data-driven, and customer experiences more personalized. At BooleanBox Solutions, we're at the forefront of this transformation, developing cutting-edge AI solutions that drive real business value.</p>
 
       <h2>The Current State of Enterprise AI</h2>
       <p>Today's enterprises are increasingly adopting AI technologies to stay competitive in a rapidly evolving market. From predictive analytics to intelligent automation, AI is becoming an integral part of business operations across industries.</p>
@@ -41,7 +41,7 @@ const BlogPost = () => {
       <p>NLP is making human-computer interaction more natural and intuitive, powering chatbots, virtual assistants, and advanced search capabilities.</p>
 
       <h2>Our Approach to AI Solutions</h2>
-      <p>At Boolean Box Solutions, we believe in developing AI solutions that are practical, scalable, and aligned with business objectives. Our team combines deep technical expertise with industry knowledge to deliver solutions that truly make a difference.</p>
+      <p>At BooleanBox Solutions, we believe in developing AI solutions that are practical, scalable, and aligned with business objectives. Our team combines deep technical expertise with industry knowledge to deliver solutions that truly make a difference.</p>
 
       <h2>Looking Ahead</h2>
       <p>The future of AI in enterprise solutions is bright, with emerging technologies like edge AI, federated learning, and AI-driven cybersecurity set to reshape the landscape. We're excited to be part of this journey, helping businesses harness the power of AI to achieve their goals.</p>
@@ -53,7 +53,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{blogPost.title} - Boolean Box Solutions Blog</title>
+        <title>{blogPost.title} - BooleanBox Solutions Blog</title>
         <meta name="description" content={blogPost.title} />
       </Helmet>
 

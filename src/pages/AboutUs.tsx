@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { FaRocket, FaUsers, FaLightbulb, FaHeart } from 'react-icons/fa';
 import './AboutUs.css';
+import logoIcon from '../assets/logo_icon_booleanbox_sol_white.png';
 
 const AboutUs = () => {
   const values = [
@@ -30,10 +31,10 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Boolean Box Solutions</title>
+        <title>About Us - BooleanBox Solutions</title>
         <meta 
           name="description" 
-          content="Learn about Boolean Box Solutions - a team of highly capable IT professionals dedicated to delivering innovative software, AI, cybersecurity, and IoT solutions." 
+          content="Learn about BooleanBox Solutions - a team of highly capable IT professionals dedicated to delivering innovative software, AI, cybersecurity, and IoT solutions." 
         />
       </Helmet>
 
@@ -46,7 +47,7 @@ const AboutUs = () => {
               transition={{ duration: 0.8 }}
               className="about-hero-content"
             >
-              <h1 className="section-title">About Boolean Box Solutions</h1>
+              <h1 className="section-title">About BooleanBox Solutions</h1>
               <p className="hero-text">
                 Empowering businesses with innovative technology solutions since our inception
               </p>
@@ -66,7 +67,7 @@ const AboutUs = () => {
               >
                 <h2>Who We Are</h2>
                 <p>
-                  Boolean Box Solutions is a premier IT services company dedicated to transforming 
+                  BooleanBox Solutions is a premier IT services company dedicated to transforming 
                   businesses through cutting-edge technology. Our highly capable team of experts 
                   specializes in delivering best-in-class software solutions tailored to meet 
                   our clients' unique needs.
@@ -86,7 +87,7 @@ const AboutUs = () => {
               >
                 <div className="image-placeholder">
                   <div className="placeholder-icon">
-                    <FaRocket />
+                    <img src={logoIcon} alt="BooleanBox Solutions Logo" className="about-logo-icon" />
                   </div>
                 </div>
               </motion.div>
@@ -205,7 +206,7 @@ const AboutUs = () => {
             >
               <h2 className="section-title">Our Team</h2>
               <p className="team-description">
-                At Boolean Box Solutions, we take pride in our highly capable team of professionals. 
+                At BooleanBox Solutions, we take pride in our highly capable team of professionals. 
                 Our experts bring years of experience and deep technical knowledge across various 
                 domains, ensuring that we deliver the best software solutions to our clients.
               </p>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaWhatsapp } from 'react-icons/fa';
 import './ContactUs.css';
 
 interface FormData {
@@ -52,19 +52,37 @@ const ContactUs = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'info@booleanboxsolutions.com',
-      link: 'mailto:info@booleanboxsolutions.com'
+      value: 'Booleanboxsolutions@gmail.com',
+      link: 'mailto:Booleanboxsolutions@gmail.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      value: '+1 (234) 567-890',
-      link: 'tel:+1234567890'
+      value: '+91 9899672533',
+      link: 'tel:+919899672533'
+    },
+    {
+      icon: <FaWhatsapp />,
+      title: 'Whatsapp',
+      value: '+91 9953052462',
+      link: 'https://wa.me/919953052462'
     },
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'Your Location, Country',
+      value: 'Rajasthan, India',
+      link: null
+    },
+    {
+      icon: <FaMapMarkerAlt />,
+      title: 'Location',
+      value: 'Delhi, India',
+      link: null
+    },
+    {
+      icon: <FaMapMarkerAlt />,
+      title: 'Location',
+      value: 'Kuala Lumpur, Malaysia',
       link: null
     }
   ];
@@ -72,10 +90,10 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Boolean Box Solutions</title>
-        <meta 
-          name="description" 
-          content="Get in touch with Boolean Box Solutions. Let's discuss how we can help transform your business with our IT solutions." 
+        <title>Contact Us - BooleanBox Solutions</title>
+        <meta
+          name="description"
+          content="Get in touch with BooleanBox Solutions. Let's discuss how we can help transform your business with our IT solutions."
         />
       </Helmet>
 
@@ -107,7 +125,7 @@ const ContactUs = () => {
               >
                 <h2>Contact Information</h2>
                 <p className="contact-intro">
-                  We'd love to hear from you. Reach out to us through any of the following channels, 
+                  We'd love to hear from you. Reach out to us through any of the following channels,
                   and our team will get back to you as soon as possible.
                 </p>
 
@@ -129,81 +147,32 @@ const ContactUs = () => {
               </motion.div>
 
               <motion.div
-                className="contact-form-section card"
+                className="contact-map-section"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <h2>Send Us a Message</h2>
-                <form className="contact-form" onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name *"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Your Email *"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Phone Number"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Company Name"
-                      value={formData.company}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      placeholder="Your Message *"
-                      rows={5}
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" className="btn btn-primary">
-                    <FaPaperPlane /> Send Message
-                  </button>
-
-                  {submitted && (
-                    <motion.div
-                      className="success-message"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
+                <h2>Locate Us</h2>
+                <p className="contact-intro">
+                  Visit our headquarters to discuss your project in person. We are strategically located to serve clients globally while maintaining strong local roots.
+                </p>
+                <div className="mapouter">
+                  <div className="gmap_canvas">
+                    <iframe 
+                      width="100%" 
+                      height="100%" 
+                      id="gmap_canvas" 
+                      src="https://maps.google.com/maps?q=Booleanbox+solutions&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                      frameBorder="0" 
+                      scrolling="no" 
+                      marginHeight={0} 
+                      marginWidth={0}
+                      title="BooleanBox Solutions Location"
                     >
-                      Thank you! Your message has been sent successfully.
-                    </motion.div>
-                  )}
-                </form>
+                    </iframe>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </div>

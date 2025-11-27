@@ -3,7 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { 
   FaCode, FaBrain, FaShieldAlt, FaNetworkWired, 
   FaCheck, FaMobileAlt, FaCloud, FaDatabase,
-  FaRobot, FaLock, FaChartLine, FaCog
+  FaRobot, FaLock, FaChartLine, FaCog,
+  FaGlobe,
+  FaDesktop
 } from 'react-icons/fa';
 import './Services.css';
 
@@ -68,7 +70,9 @@ const Services = () => {
   ];
 
   const technologies = [
-    { icon: <FaMobileAlt />, name: 'Mobile' },
+    { icon: <FaGlobe />, name: 'Web App' },
+    { icon: <FaMobileAlt />, name: 'Mobile App' },
+    { icon: <FaDesktop />, name: 'Desktop App' },
     { icon: <FaCloud />, name: 'Cloud' },
     { icon: <FaDatabase />, name: 'Database' },
     { icon: <FaRobot />, name: 'AI/ML' },
@@ -81,10 +85,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services - Boolean Box Solutions</title>
+        <title>Our Services - BooleanBox Solutions</title>
         <meta 
           name="description" 
-          content="Explore our comprehensive IT services: Custom Software Development, AI Solutions, Cybersecurity, and IoT Integration. Transform your business with Boolean Box Solutions." 
+          content="Explore our comprehensive IT services: Custom Software Development, AI Solutions, Cybersecurity, and IoT Integration. Transform your business with BooleanBox Solutions." 
         />
         <meta 
           name="keywords" 

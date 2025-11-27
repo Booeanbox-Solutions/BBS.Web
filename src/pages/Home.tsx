@@ -89,16 +89,16 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Boolean Box Solutions - IT Services, AI Solutions & Cybersecurity</title>
+        <title>BooleanBox Solutions - IT Services, AI Solutions & Cybersecurity</title>
         <meta 
           name="description" 
-          content="Boolean Box Solutions provides cutting-edge IT services, AI solutions, cybersecurity, and IoT integration. Transform your business with our expert team." 
+          content="BooleanBox Solutions provides cutting-edge IT services, AI solutions, cybersecurity, and IoT integration. Transform your business with our expert team." 
         />
         <meta 
           name="keywords" 
-          content="IT services, software development, AI solutions, cybersecurity, IoT integration, Boolean Box Solutions" 
+          content="IT services, software development, AI solutions, cybersecurity, IoT integration, BooleanBox Solutions" 
         />
-        <meta property="og:title" content="Boolean Box Solutions - IT Services & AI Solutions" />
+        <meta property="og:title" content="BooleanBox Solutions - IT Services & AI Solutions" />
         <meta 
           property="og:description" 
           content="Expert IT services, AI solutions, and cybersecurity for modern businesses" 
@@ -109,7 +109,7 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Boolean Box Solutions",
+            "name": "BooleanBox Solutions",
             "description": "IT Services, AI Solutions, Cybersecurity & IoT Integration",
             "url": "https://booleanboxsolutions.com",
             "logo": "https://booleanboxsolutions.com/logo.png",
@@ -179,7 +179,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Boolean Box Solutions delivers cutting-edge IT services, AI-powered solutions, 
+                BooleanBox Solutions delivers cutting-edge IT services, AI-powered solutions, 
                 cybersecurity excellence, and seamless IoT integration to drive your success.
               </motion.p>
 
@@ -190,7 +190,7 @@ const Home = () => {
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
                 <Link to="/contact" className="btn btn-primary">
-                  Get Started
+                  Contact Us
                 </Link>
                 <Link to="/services" className="btn btn-outline">
                   Explore Services

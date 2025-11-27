@@ -1,12 +1,12 @@
-# Boolean Box Solutions - Official Website# Boolean Box Solutions - Official Website# React + Vite
+# BooleanBox Solutions - Official Website# BooleanBox Solutions - Official Website# React + Vite
 
 
 
-A modern, enterprise-grade website for Boolean Box Solutions built with React 19, Vite, Tailwind CSS, and Framer Motion following industry best practices.
+A modern, enterprise-grade website for BooleanBox Solutions built with React 19, Vite, Tailwind CSS, and Framer Motion following industry best practices.
 
 
 
-## 🚀 FeaturesA modern, futuristic website for Boolean Box Solutions built with React 19, Vite, and Framer Motion.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 FeaturesA modern, futuristic website for BooleanBox Solutions built with React 19, Vite, and Framer Motion.This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 
 
@@ -258,7 +258,7 @@ vercel --prod- Tablet: 640px - 968px
 
 5. Click "Deploy"
 
-Proprietary - Boolean Box Solutions
+Proprietary - BooleanBox Solutions
 
 **Configuration (automatic):**
 
@@ -266,7 +266,7 @@ Proprietary - Boolean Box Solutions
 
 - Output Directory: `dist`
 
-- Install Command: `yarn install`Built with ❤️ by Boolean Box Solutions
+- Install Command: `yarn install`Built with ❤️ by BooleanBox Solutions
 
 
 ### Option 2: Netlify
@@ -403,7 +403,7 @@ cp your-logo.png public/logo.png
 
 Update `src/components/Navbar.jsx`:
 ```jsx
-<img src="/logo.png" alt="Boolean Box Solutions" className="h-10" />
+<img src="/logo.png" alt="BooleanBox Solutions" className="h-10" />
 ```
 
 ### Customize Theme
@@ -490,8 +490,8 @@ yarn type-check
 
 ## 📝 License
 
-Proprietary - Boolean Box Solutions
+Proprietary - BooleanBox Solutions
 
 ---
 
-**Built with ❤️ by Boolean Box Solutions | Enterprise-Grade React Application**
+**Built with ❤️ by BooleanBox Solutions | Enterprise-Grade React Application**

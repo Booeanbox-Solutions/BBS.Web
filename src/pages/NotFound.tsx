@@ -8,7 +8,7 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>404 - Page Not Found | Boolean Box Solutions</title>
+        <title>404 - Page Not Found | BooleanBox Solutions</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
