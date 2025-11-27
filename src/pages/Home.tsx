@@ -20,16 +20,14 @@ const Home = () => {
   const statsInView = useInView(statsRef, { once: true, margin: "-100px" });
 
   useEffect(() => {
-    if (videoReady && videoRef.current) {
-      const playPromise = videoRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Autoplay might be blocked; keep fallback visible in that scenario
-          setVideoReady(false);
-        });
-      }
+    // Ensure video plays on mount for some browsers
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Autoplay prevented:", error);
+        // Don't hide the video if autoplay fails, let the user see the poster/first frame
+      });
     }
-  }, [videoReady]);
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -210,14 +208,15 @@ const Home = () => {
                 <video
                   ref={videoRef}
                   className={`hero-video ${videoReady ? 'visible' : ''}`}
-                  src={heroVideoSrc}
                   preload="auto"
                   autoPlay
                   muted
                   loop
                   playsInline
                   onLoadedData={() => setVideoReady(true)}
-                />
+                >
+                  <source src={heroVideoSrc} type="video/mp4" />
+                </video>
 
                 <div className={`hero-fallback ${videoReady ? 'hidden' : ''}`}>
                   <div className="floating-element">
