@@ -212,10 +212,11 @@ const Home = () => {
                   className={`hero-video ${videoReady ? 'visible' : ''}`}
                   src={heroVideoSrc}
                   preload="auto"
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  onCanPlayThrough={() => setVideoReady(true)}
+                  onLoadedData={() => setVideoReady(true)}
                 />
 
                 <div className={`hero-fallback ${videoReady ? 'hidden' : ''}`}>
