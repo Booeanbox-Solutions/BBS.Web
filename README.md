@@ -462,7 +462,7 @@ Edit `index.html` - update title, description, og:image URLs
 Create `.env`:
 ```env
 VITE_API_URL=https://api.yourdomain.com
-VITE_CONTACT_EMAIL=info@booleanboxsolutions.com
+VITE_CONTACT_EMAIL=booleanboxsolutions@gmail.com
 ```
 
 Usage:
@@ -485,8 +485,8 @@ yarn type-check
 
 ## 📞 Support
 
-- **Email**: info@booleanboxsolutions.com
-- **Website**: https://booleanboxsolutions.com
+- **Email**: booleanboxsolutions@gmail.com
+- **Website**: https://booleanbox.com
 
 ## 📝 License
 

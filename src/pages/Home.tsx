@@ -104,19 +104,19 @@ const Home = () => {
           content="Expert IT services, AI solutions, and cybersecurity for modern businesses" 
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://booleanboxsolutions.com" />
+        <link rel="canonical" href="https://booleanbox.com" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "BooleanBox Solutions",
             "description": "IT Services, AI Solutions, Cybersecurity & IoT Integration",
-            "url": "https://booleanboxsolutions.com",
-            "logo": "https://booleanboxsolutions.com/logo.png",
+            "url": "https://booleanbox.com",
+            "logo": "https://booleanbox.com/logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+1-234-567-890",
-              "contactType": "Customer Service"
+              "telephone": "+91 9899672533",
+              "contactType": "Team"
             },
             "sameAs": [
               "https://linkedin.com/company/booleanboxsolutions",
