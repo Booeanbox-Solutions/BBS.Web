@@ -12,6 +12,17 @@ const PrivacyPolicy = () => {
           name="description"
           content="Privacy Policy for BooleanBox Solutions. Learn how we collect, use, and protect your personal information."
         />
+        <link rel="canonical" href="https://booleanbox.com/privacy-policy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://booleanbox.com/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy - BooleanBox Solutions" />
+        <meta property="og:description" content="Privacy Policy for BooleanBox Solutions. Learn how we collect, use, and protect your personal information." />
+        <meta property="og:image" content="https://booleanbox.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://booleanbox.com/privacy-policy" />
+        <meta property="twitter:title" content="Privacy Policy - BooleanBox Solutions" />
+        <meta property="twitter:description" content="Privacy Policy for BooleanBox Solutions. Learn how we collect, use, and protect your personal information." />
+        <meta property="twitter:image" content="https://booleanbox.com/twitter-image.jpg" />
       </Helmet>
 
       <div className="privacy-page">

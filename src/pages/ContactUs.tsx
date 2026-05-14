@@ -95,6 +95,17 @@ const ContactUs = () => {
           name="description"
           content="Get in touch with BooleanBox Solutions. Let's discuss how we can help transform your business with our IT solutions."
         />
+        <link rel="canonical" href="https://booleanbox.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://booleanbox.com/contact" />
+        <meta property="og:title" content="Contact Us - BooleanBox Solutions" />
+        <meta property="og:description" content="Get in touch with BooleanBox Solutions. Let's discuss how we can help transform your business with our IT solutions." />
+        <meta property="og:image" content="https://booleanbox.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://booleanbox.com/contact" />
+        <meta property="twitter:title" content="Contact Us - BooleanBox Solutions" />
+        <meta property="twitter:description" content="Get in touch with BooleanBox Solutions. Let's discuss how we can help transform your business with our IT solutions." />
+        <meta property="twitter:image" content="https://booleanbox.com/twitter-image.jpg" />
       </Helmet>
 
       <div className="contact-page">

@@ -36,6 +36,17 @@ const AboutUs = () => {
           name="description" 
           content="Learn about BooleanBox Solutions - a team of highly capable IT professionals dedicated to delivering innovative software, AI, cybersecurity, and IoT solutions." 
         />
+        <link rel="canonical" href="https://booleanbox.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://booleanbox.com/about" />
+        <meta property="og:title" content="About Us - BooleanBox Solutions" />
+        <meta property="og:description" content="Learn about BooleanBox Solutions - a team of highly capable IT professionals dedicated to delivering innovative software, AI, cybersecurity, and IoT solutions." />
+        <meta property="og:image" content="https://booleanbox.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://booleanbox.com/about" />
+        <meta property="twitter:title" content="About Us - BooleanBox Solutions" />
+        <meta property="twitter:description" content="Learn about BooleanBox Solutions - a team of highly capable IT professionals dedicated to delivering innovative software, AI, cybersecurity, and IoT solutions." />
+        <meta property="twitter:image" content="https://booleanbox.com/twitter-image.jpg" />
       </Helmet>
 
       <div className="about-page">
