@@ -94,6 +94,17 @@ const Services = () => {
           name="keywords" 
           content="software development, AI solutions, machine learning, cybersecurity, IoT integration, cloud services" 
         />
+        <link rel="canonical" href="https://booleanbox.com/services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://booleanbox.com/services" />
+        <meta property="og:title" content="Our Services - BooleanBox Solutions" />
+        <meta property="og:description" content="Explore our comprehensive IT services: Custom Software Development, AI Solutions, Cybersecurity, and IoT Integration. Transform your business with BooleanBox Solutions." />
+        <meta property="og:image" content="https://booleanbox.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://booleanbox.com/services" />
+        <meta property="twitter:title" content="Our Services - BooleanBox Solutions" />
+        <meta property="twitter:description" content="Explore our comprehensive IT services: Custom Software Development, AI Solutions, Cybersecurity, and IoT Integration. Transform your business with BooleanBox Solutions." />
+        <meta property="twitter:image" content="https://booleanbox.com/twitter-image.jpg" />
       </Helmet>
 
       <div className="services-page">

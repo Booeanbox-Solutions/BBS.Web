@@ -87,6 +87,17 @@ const Blog = () => {
           name="description" 
           content="Read the latest insights on AI, cybersecurity, IoT, and software development from BooleanBox Solutions experts." 
         />
+        <link rel="canonical" href="https://booleanbox.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://booleanbox.com/blog" />
+        <meta property="og:title" content="Blog - BooleanBox Solutions | Tech Insights & Updates" />
+        <meta property="og:description" content="Read the latest insights on AI, cybersecurity, IoT, and software development from BooleanBox Solutions experts." />
+        <meta property="og:image" content="https://booleanbox.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://booleanbox.com/blog" />
+        <meta property="twitter:title" content="Blog - BooleanBox Solutions | Tech Insights & Updates" />
+        <meta property="twitter:description" content="Read the latest insights on AI, cybersecurity, IoT, and software development from BooleanBox Solutions experts." />
+        <meta property="twitter:image" content="https://booleanbox.com/twitter-image.jpg" />
       </Helmet>
 
       <div className="blog-page">
